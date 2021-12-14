@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+  /****************BODY FONT****************/
+  --bodyFont: "Ubuntu";
+
+  /****************COLOR****************/
+  --primary-white:#fefefe;
+  --primary-blue: #094c9c;
+  --primary-brown: #2c141a;
+  --primary-orange: #fea100;
+  --primary-black: #010103;
+}

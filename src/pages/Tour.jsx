@@ -1,10 +1,10 @@
 import React from 'react'
-
+import TourHighlightsCard from '../components/TourHighlightsCard'
 function Tour() {
     return (
-        <div>
-
-        </div>
+        <main id='Tour'>
+            <TourHighlightsCard />
+        </main>
     )
 }
 

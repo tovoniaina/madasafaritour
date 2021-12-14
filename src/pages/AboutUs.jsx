@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react';
+import Aboutus from "../components/AboutUs";
 
-function AboutUs() {
-    return (
-        <div>
-
-        </div>
-    )
+export class AboutUs extends Component {
+    render() {
+        return (
+            <main id="AboutUs">
+                <Aboutus />
+            </main>
+        )
+    }
 }
 
 export default AboutUs
+
