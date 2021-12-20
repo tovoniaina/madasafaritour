@@ -14,7 +14,7 @@ function Navtop() {
                 <div className="row">
                     <div className="col-6 contact">
                         <a href="tel:+261336381135"><WhatsAppIcon />+261336381135</a>
-                        <a href="mailto:cs@qerozia.io"><MailIcon />cs@qerozia.io</a>
+                        <a href="mailto:cs@qerozia.io"><MailIcon />customer@madasafaritours.com</a>
                     </div>
                     <div className="col-6 social">
                         <a href="https://web.facebook.com/qeroziadigital"><FacebookIcon /></a>

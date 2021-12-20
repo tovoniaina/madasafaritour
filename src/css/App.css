@@ -7,7 +7,77 @@
   /****************COLOR****************/
   --primary-white:#fefefe;
   --primary-blue: #094c9c;
-  --primary-brown: #2c141a;
+  --primary-brown: #68303e;
   --primary-orange: #fea100;
   --primary-black: #010103;
+}
+
+
+/****************NAVTOP****************/
+.contact {
+  color: red !important;
+  font-size: 18px;
+}
+
+/****************NAVBAR****************/
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+nav ul li{
+  text-transform: uppercase;
+}
+nav ul{
+  margin-left: auto !important;    
+}
+
+.navbar-nav > li > a{
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-black) !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-bottom: 0.1875rem solid var(--primary-brown);
+
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-black);
+}
+
+.menu{
+  background-color: var(--primary-orange);
+}
+
+.booknow > a{
+  color: var(--primary-black) !important;
+  outline: none !important;
+}
+
+/****************SLIDER****************/
+.Slider{
+
+}
+
+/****************FOOTER****************/
+.footer{
+  /* background-image: url('../images/curve-bg-footer.svg'); */
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 1200px;
+  display: flex;
 }

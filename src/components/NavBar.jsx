@@ -1,10 +1,74 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
+import logo from '../images/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import InfoIcon from '@mui/icons-material/Info';
+import QuizIcon from '@mui/icons-material/Quiz';
+import GroupsIcon from '@mui/icons-material/Groups';
+import TravelExploreIcon from '@mui/icons-material/TravelExplore';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import Button from '@mui/material/Button';
 
 function NavBar() {
     return (
-        <div>
-            <h1>Here is a navbar</h1>
-        </div>
+        <nav className='navbar navbar-expand-lg navbar-light menu'>
+            <div className="container">
+                <Link className='navbar-brand' to="/">
+                    <img src={logo} alt="logo madasafari" className='logo' />
+                </Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <FontAwesomeIcon icon={faBars} style={{ color: "#6e4c27" }} />
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto text-light">
+                        <li className="nav-item">
+
+                            <Link to="/" className="nav-link"> <HomeRoundedIcon />Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/AboutUs" className="nav-link"><InfoIcon />About Us</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/Faqs" className="nav-link"><QuizIcon />Faqs</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/Team" className="nav-link"><GroupsIcon />Team</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/Tour" className="nav-link"><TravelExploreIcon />Tour</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link to="/Contact" className="nav-link"><ContactMailIcon />Contact</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className='booknow' href="https://dev-client-front.smartpredict.cloud/u/tovoniaina-s-team/settings/team/billing"><Button variant="contained"><EventAvailableIcon /> Book Now</Button></a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav >
+
+        // <div className="list container">
+        //     <Link to="/">Home</Link>
+        //     <Link to="AboutUs">AboutUs</Link>
+        //     <Link to="Faqs">Faqs</Link>
+        //     <Link to="Team">Team</Link>
+        //     <Link to="Tour">Tour</Link>
+        // </div>
     )
 }
 
